@@ -1,0 +1,19 @@
+GET http://localhost:8080/accounts
+
+###
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{
+    "accountName": "BK",
+    "password": "password"
+}
+
+###
+POST http://localhost:8080/accounts/login
+Content-Type: application/json
+
+{
+    "accountName": "BK",
+    "password": "passwor"
+}
